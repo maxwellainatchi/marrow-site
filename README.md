@@ -1,6 +1,6 @@
 # Marrow site
 
-The public website, privacy policy, terms of use and data-use page for [Marrow](https://marrow-info.ainatchi.me), a personal, self-hosted health record. These pages exist so Marrow can be registered as a patient-facing app on fhir.epic.com.
+The public website, privacy policy, terms of use and data-use page for [Marrow](https://maxwellainatchi.github.io/marrow-site), a personal, self-hosted health record. These pages exist so Marrow can be registered as a patient-facing app on fhir.epic.com.
 
 - Static HTML and CSS only: no scripts, no cookies, no analytics, and never any health record data.
 - Pages live in `src/` and are wrapped in `layout.html`. Colors and type come from `vendor/tokens.css`, a copy of the Marrow Clinical design tokens; dark mode follows the system setting.
@@ -9,11 +9,11 @@ The public website, privacy policy, terms of use and data-use page for [Marrow](
 
 ## URLs for the Epic app form
 
-- Website: https://marrow-info.ainatchi.me/
-- Terms and Conditions URL: https://marrow-info.ainatchi.me/terms
-- Privacy policy: https://marrow-info.ainatchi.me/privacy
-- Additional Disclosure Information URL: https://marrow-info.ainatchi.me/data-use
-- JWK Set URL: https://marrow-info.ainatchi.me/.well-known/jwks.json
+- Website: https://maxwellainatchi.github.io/marrow-site/
+- Terms and Conditions URL: https://maxwellainatchi.github.io/marrow-site/terms
+- Privacy policy: https://maxwellainatchi.github.io/marrow-site/privacy
+- Additional Disclosure Information URL: https://maxwellainatchi.github.io/marrow-site/data-use
+- JWK Set URL: https://maxwellainatchi.github.io/marrow-site/.well-known/jwks.json
 
 `src/.well-known/jwks.json` holds **public keys only**. Never put a private key in this repo.
 
