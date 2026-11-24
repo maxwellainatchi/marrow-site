@@ -1,0 +1,35 @@
+<!-- title: Data use · Marrow | desc: Plain answers about what data Marrow reads from Epic, where it goes, and how to revoke access. -->
+      <article class="doc">
+        <p class="overline">Marrow</p>
+        <h1>Data use</h1>
+        <p class="updated">Last updated {{UPDATED}}</p>
+
+        <p>Plain answers to the questions health systems and app reviewers ask about how Marrow uses data from Epic.</p>
+
+        <h2>Who is the developer?</h2>
+        <p>Maxwell Ainatchi, an individual developer. Marrow is a personal, non-commercial project. It has no investors, no advertising and no paid plans. Contact: {{CONTACT}}.</p>
+
+        <h2>Who uses the app?</h2>
+        <p>Patients, for their own records. Marrow is a patient-facing app; it is not used by clinicians or health systems.</p>
+
+        <h2>What data does it read?</h2>
+        <p>Only the FHIR resources the patient approves at sign-in, read-only: patient demographics, conditions, allergies, medications, immunizations, observations (labs and vitals), procedures, encounters, care team and documents. Marrow never writes to Epic.</p>
+
+        <h2>Where does the data go?</h2>
+        <p>To the patient's own Marrow server and nowhere else. The OAuth exchange happens on that server, which is a confidential client; access and refresh tokens are stored there encrypted and never reach the browser. The developer does not operate a central server and never receives patient data.</p>
+
+        <h2>Is data sold or shared?</h2>
+        <p>No. Data is never sold, never used for advertising, never shared with data brokers, and never sent to a cloud AI service. Any AI features run on a local model on the patient's own server.</p>
+
+        <h2>Can the patient get their data out, or delete it?</h2>
+        <p>Yes. The patient can export or delete everything from Marrow, and revoke Marrow's access from MyChart at any time.</p>
+
+        <h2>Security practices</h2>
+        <ul>
+          <li>Server-side OAuth with PKCE and asymmetric (JWT) client authentication</li>
+          <li>Tokens encrypted at rest and never sent to the browser</li>
+          <li>Strict content security policy and an allowlist for outbound requests</li>
+          <li>Encrypted backups</li>
+        </ul>
+        <p>See the <a href="/privacy">privacy policy</a> and <a href="/terms">terms of use</a> for the full text.</p>
+      </article>

@@ -1,0 +1,7 @@
+{
+  "name": "marrow-site",
+  "private": true,
+  "type": "module",
+  "description": "Public site, privacy policy and terms for Marrow. Static HTML, no scripts, no record data.",
+  "scripts": { "build": "node build.mjs" }
+}

@@ -1,0 +1,55 @@
+<!-- title: Marrow · your health record, on your own server | desc: Marrow is a personal, self-hosted health record. It reads your records from your patient portal, keeps every source untouched, and builds one record you can trace back to its source. -->
+      <section class="hero">
+        <div>
+          <p class="overline">Personal health record</p>
+          <h1>Your health record, on your own server.</h1>
+          <p class="lede">Marrow gathers your records from your patient portal, PDFs and your own notes, keeps every source exactly as it arrived, and builds one record on top that you can trace back line by line.</p>
+        </div>
+        <div class="monitor" aria-hidden="true">
+          <svg viewBox="0 0 320 150">
+            <g class="grid">
+              <path d="M0 25H320M0 50H320M0 100H320M0 125H320M40 0V150M80 0V150M120 0V150M200 0V150M240 0V150M280 0V150"/>
+            </g>
+            <g class="grid-major"><path d="M0 75H320M160 0V150"/></g>
+            <rect class="band" x="0" y="55" width="320" height="40"/>
+            <path class="trace" d="M0 80h40l10-6 8 6h24l8-44 10 78 8-34h30l12-10 10 10h36l8-40 10 72 8-32h30l12-8 10 8h36"/>
+          </svg>
+          <div class="monitor-row"><span>SOURCES 3</span><span>RECONCILED</span><span>READ-ONLY</span></div>
+        </div>
+      </section>
+
+      <section class="cards" aria-label="What Marrow does">
+        <div class="card">
+          <h2>Reads, never writes</h2>
+          <p>Marrow connects to your patient portal with your permission and only reads. It never changes anything at your doctor's office.</p>
+        </div>
+        <div class="card">
+          <h2>Every source kept</h2>
+          <p>Each record stays exactly as it came in. The combined record is rebuilt on top, so you can always see where a line came from.</p>
+        </div>
+        <div class="card">
+          <h2>Runs where you choose</h2>
+          <p>Marrow runs on a server you control. There is no Marrow cloud, no account with us, and no advertising.</p>
+        </div>
+      </section>
+
+      <section class="band">
+        <h2>What it keeps track of</h2>
+        <ul>
+          <li>Medications, with doses taken and reminders</li>
+          <li>Lab results over time, flagged against their reference ranges</li>
+          <li>Vaccines, with series windows from CDC schedules</li>
+          <li>Visits, conditions and allergies, filterable by specialty</li>
+          <li>A visit report you can print and bring to an appointment</li>
+        </ul>
+      </section>
+
+      <section class="band">
+        <h2>Connecting to Epic (MyChart)</h2>
+        <p>Marrow uses the SMART on FHIR standard to read your record from health systems that use Epic. You sign in to MyChart yourself and choose what to share. Marrow's server keeps the access token; it is never sent to your browser, and you can revoke access from MyChart at any time. See the <a href="/privacy">privacy policy</a> and <a href="/data-use">data use</a> page for exactly what is read and where it goes.</p>
+      </section>
+
+      <section class="band">
+        <h2>Who makes it</h2>
+        <p>Marrow is a personal project by Maxwell Ainatchi, built to keep his own records. It is not sold, and it is not a hosted service. Questions: {{CONTACT}}.</p>
+      </section>
